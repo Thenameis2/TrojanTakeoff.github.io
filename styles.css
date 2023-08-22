@@ -139,19 +139,7 @@ body {
   .menu-list li {
     margin: 5px 0;
   }
-  body {
-    font-size: 16px; /* Adjusting font size for readability */
-  }
-  
-  .team {
-    flex-direction: column; /* Stack team members vertically */
-    gap: 20px; /* Add some space between team members */
-  }
-  
-  .team-member img {
-    width: 100px; /* Reduce image size for mobile */
-    height: 100px;
-  }
+
 }
 
 
