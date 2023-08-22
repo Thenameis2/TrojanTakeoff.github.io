@@ -49,7 +49,7 @@ body {
   display: block; /* Display the Earth Animation page by default */
 }
 
-/* Add your custom CSS styling and animations here */
+/*  custom CSS styling and animations here */
 
 
 /* Hero Section */
@@ -73,7 +73,7 @@ body {
   display: flex;
   flex-direction: row; /* Display team members horizontally */
   gap: 30px;
-  margin: 20px 0; /* Adjust the top margin as needed */
+  margin: 20px 0; 
   align-items: center; /* Center team members vertically */
 }
 
@@ -97,4 +97,9 @@ body {
   left : -47% ;
   
 }
+
+@media (max-width: 768px) {
+ 
+}
+
 
