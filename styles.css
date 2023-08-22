@@ -98,7 +98,7 @@ body {
 }
 
 .hamburger-menu {
-/*   display: none; /* Hide on larger screens */ 
+  display: block; /* Hide on larger screens */ 
   z-index: 1100; /* Ensure the hamburger menu is above tabs */
   cursor: pointer;
 }
