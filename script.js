@@ -76,3 +76,11 @@ tabButtons.forEach(button => {
   });
 });
 
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const menuList = document.querySelector('.menu-list');
+
+hamburgerIcon.addEventListener('click', () => {
+  menuList.classList.toggle('active');
+});
+
+
