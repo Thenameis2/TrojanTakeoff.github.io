@@ -69,7 +69,7 @@ body {
 /* Team Members */
 .team {
   display: flex;
-  flex-direction: row; /* Display team members horizontally */
+  flex-wrap: wrap; /* Allow flex items to wrap */
   gap: 30px;
   margin: 20px 0;
   align-items: center; /* Center team members vertically */
@@ -131,6 +131,25 @@ body {
   .menu-list.active {
     display: flex; /* Show when active */
   }
+  .team {
+    flex-direction: column; /* Stack images vertically on mobile */
+    align-items: center;
+  }
+
+  .team-member {
+    margin-bottom: 20px; /* Add some space between stacked images */
+  }
+
+  .team-member img {
+    width: 200px; /* Increase image width for better mobile display */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .page-content {
+    overflow-y: scroll; /* Enable scrolling for the content */
+    max-height: 100vh; /* Set a maximum height for scrolling */
+  }
+
 
   /* Rest of your existing media query styles */
 }
