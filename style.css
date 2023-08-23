@@ -253,7 +253,7 @@
 
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 718px) {
     /* ... Your existing media query styles ... */
 
     /* Update the styles for the tabs */
