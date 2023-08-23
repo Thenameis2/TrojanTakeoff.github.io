@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>3D Object</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- Imports a model-viewer JavaScript code -->
+        <!-- It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- Main Container -->
+    <div id="container">
+    <!-- Navbar container -->
+    <div id="navbar">
+        
+        <ul>
+            <li><button class="tab-link" data-tab="home-tab">Home</button></li>
+            <li><button class="tab-link" data-tab="about-tab">About Us</button></li>
+            <li><button class="tab-link" data-tab="projects-tab">NASA Projects</button></li>
+            <li><button class="tab-link" data-tab="engagement-tab">STEM Engagement</button></li>
+            <li><button class="tab-link" data-tab="involved-tab">Get Involved</button></li>
+        </ul>
+    </div>
+    <!-- This is for holding the 3D object -->
+    
+
+    <!-- Content container -->
+    <div id="content">
+        <!-- Content about the 3D object -->
+        <div class="content-with-3d">
+            <div class="tab-content active-tab" id="home-tab">
+                <h2>Trojan Takeoff</h2>
+                <p>A Passionate team of Engineers</p>
+                <button>Join</button>
+                <div id="aSide">
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+                <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer>
+                
+            </div>
+            </div>
+        </div>
+    
+        <div class="tab-content" id="about-tab">
+            <div class="content-with-3d">
+            <div id="aSide">
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer>
+                
+            </div>
+            <div class="members">
+                <div class="member-card">
+                    <img src="makhalia.png" alt="Member 1">
+                    <h3>MaKhaila Bentil</h3>
+                    <p>Student Leader</p>
+                </div>
+                <div class="member-card">
+                    <img src="alicia.jpeg" alt="Team Member 2">
+                    <h3>Alicia Williamson</h3>
+                    <p>Social Media Chair</p>
+                </div>
+                <div class="member-card">
+                    <img src="Brenton.jpeg" alt="Team Member 3">
+                    <h3>Brenton Wynter</h3>
+                    <p>Safety Officer </p>
+                </div>
+                <div class="member-card">
+                    <img src="Marcus.jpeg" alt="Team Member 4">
+                    <h3>Marcus Scott </h3>
+                     <p>Safety Officer</p>
+                </div>
+                <div class="member-card">
+                    <img src="Structural Lead.jpeg" alt="Team Member 4">
+                    <h3> Michael Archibong </h3>
+                    <p>Structural Lead</p>
+                </div>
+                <div class="member-card">
+                    <img src="nick.jpeg" alt="Team Member 4">
+                    <h3> Nicolas Pollard </h3>
+                     <p>Task Manager</p>
+                </div>
+                <!-- Repeat similar member-card elements for the other members -->
+            </div>
+            </div>
+            
+
+        </div>
+        <div class="tab-content" id="projects-tab">
+            <h1>NASA Projects</h1>
+            <p>Explore some of our exciting projects</p>
+            <div id="aSide">
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer>
+                
+            </div>
+        </div>
+        <div class="tab-content" id="engagement-tab">
+            <h1>STEM Engagement</h1>
+            <p>Discover our STEM Engagement</p>
+            <div id="aSide">
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer>
+                
+            </div>
+        </div>
+        <div class="tab-content" id="involved-tab">
+            <h1>Get Involved / Sign Up</h1>
+            <p>Join us and be a part of our community! Sign up for updates</p>
+            <div id="aSide">
+                <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer src="solar_system_paint_3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="solar_system_paint_3d/scene.gltf"></model-viewer>
+                
+            </div>
+    
+      <!-- Embed Google Form here -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSez-f1RRD7pDKuaPaRmqCf7NTCLkemd7-8BPbrMBiEkV6pMmQ/viewform" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+    </div>
+
+    <!-- Social media icons -->
+    <!-- This is for holding some company's social media icons and related links -->
+    <div id="icons">
+        <div id="iconsLogo">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
