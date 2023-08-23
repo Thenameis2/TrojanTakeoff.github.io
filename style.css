@@ -253,56 +253,108 @@
 
 
 /* Media query for smaller screens */
-@media (max-width: 718px) {
-    /* ... Your existing media query styles ... */
+@media (max-width: 360px) {
 
-    /* Update the styles for the tabs */
-    #tabs {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 70%;
-        background-color: #333;
-        transition: left 0.3s ease-in-out;
-    }
-
-    #tabs.active {
-        left: 0;
-    }
-
-    .tab-button {
-        width: auto;
-        text-align: center;
-    }
-
-    /* Update the styles for the close button */
-    #close-tabs {
-        display: block;
-        font-size: 24px;
-        text-align: right;
-    }
     .navbar{
-        left: 30px;
+        /* left: 10px;
         transition: left 0.3s ease-in-out;
+        width : calc(100% - 190px); 
+        left: calc(50% - 150px);
+        font: size 5px; */
+        top: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        font-size: 12px;
         
     }
     #aSide {
-        height: 400px;
-        width: 400px;
+        height: 600px;
+        width: 600px;
         position: absolute;
         top: calc(50% - 250px);
-        right: 0%;
-        top: 0;
-        left: 0;
+        right: 23%;
     }
     #aSide model-viewer {
-        height: 400px;
+        height:360px;
         width: 400px;
         position: absolute;
         top: 0;
         left: 0;
         border: none;
     }
+
+/* This styles the unlisted links in the navbar */
+    #navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+    #navbar ul li {
+    height: 20px;
+    width: 50px;
+    margin: 0 10px;
+    display: grid;
+    place-items: center;
+    color: grey;
+}
+  /* Make the font size of the 3D description heading smaller */
+  #content h2 {
+    font-size: 30px;
+}
+ /* Make the font size of the 3D description paragraph smaller */
+ #content p {
+    font-size: 16px;
+}
+ /* Make the font size of member profile card smaller */
+ .member-card h3 {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.member-card p {
+    font-size: 10px; /* Adjust the font size as needed */
+}
+.members {
+    grid-template-columns: 1fr; /* Display 1 card per row on small screens */
+    gap: 10px; /* Adjust gap if needed */
+    /* ... other properties ... */
+}
+.member-card {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+    /* Adjust width and height for mobile devices */
+    width: 30%; /* Make the card width 100% of its container */
+     /* Let the height adjust based on content */
+     /* Adjust the top margin to move the cards up */
+    height: 10vh;
+}
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #060606;
+}
+.member-card img {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+.frame {
+    width: 38%; /* Make the iframe width 100% of its container */
+    height: 50px; /* Set a fixed height for better visibility */
+}
 
     
 }
