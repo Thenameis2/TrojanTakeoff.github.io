@@ -292,13 +292,15 @@
         position: absolute;
         top: calc(50% - 250px);
         right: 0%;
+        top: 0;
+        left: 0;
     }
     #aSide model-viewer {
         height: 400px;
         width: 400px;
         position: absolute;
         top: 0;
-        left: 50;
+        left: 0;
         border: none;
     }
 
