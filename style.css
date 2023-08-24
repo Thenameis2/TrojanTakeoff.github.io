@@ -13,6 +13,7 @@
     width: 100%;
     position: relative;
     background: #060606;
+    overflow-x: hidden
 }
 
 /* This styles the navbar and its contents */
@@ -343,6 +344,7 @@
     width: 100%;
     position: relative;
     background: #060606;
+    overflow-x: hidden
 }
 .member-card img {
     width: 60px; /* Adjust the width as needed */
