@@ -273,7 +273,7 @@
         width: 600px;
         position: absolute;
         top: calc(50% - 250px);
-        right: 23%;
+        right: 35%;
     }
     #aSide model-viewer {
         height:360px;
