@@ -190,6 +190,7 @@
     top: 0;
     left: 0;
     border: none;
+    right: 35%;
 }
 /* Styling for tab links */
 #navbar ul li button {
